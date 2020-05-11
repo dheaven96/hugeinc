@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <title>Huge Inc.</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="Hevin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/destyle.css"><!-- 브라우저 초기화 -->
+  <link rel="stylesheet" type="text/css" href="css/common.css"><!-- 공통요소 -->
+  <link rel="stylesheet" type="text/css" href="css/home.css"><!-- home 페이지 -->
+  <link rel="stylesheet" type="text/css" href="css/work.css"><!-- work 페이지 -->
+
+<!-- 구글 웹 폰트 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+
+  <script>
+/*  변수 선언  */
+   var header_state = 0;    /* 헤더 보이기 상태 */
+  
+        function LogoClick()  {
+          
+          if (header_state == 0)  {
+            document.getElementById("home_header").style ="visibility:visible;";
+            header_state = 1; /* 헤더 visible 상태 기억 */
+          } 
+          else {
+            document.getElementById("home_header").style ="visibility:hidden;";
+            header_state = 0; /* 헤더 hidden 상태 기억 */
+          } 
+        }
+  
+   </script>
+</head>
+
+<body>
+
+<!-- 원래 Home_logo
+<div class="logo_box">
+   <div class="logo">H</div>
+</div>  -->
+
+<!-- Home_logo 시작 -->
+<div id="logo_h" onclick="LogoClick()">H</div>
+
+
+<!-- header 시작 -->
+<header id="home_header">
+
+    <nav class="gnb">
+        <ul class="menu_wrap">
+          <li>
+            <a href="index_3.24종합.html">Hello.</a>
+            <p>Today at Huge.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="work.html">Work.</a>
+            <p>What we've made.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="about.html">About.</a>
+            <p>Who we are.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="careers.html">Careers.</a>
+            <p>Join the team.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="contact.html">Contact.</a>
+            <p>Get in touch.</p>
+            <div></div>
+          </li>
+        </ul>
+    
+        <div class="gnb_aside">
+          <p class="">Explore our thought leadership at</p>
+          <a href="magenta.html">MAGENTA<span>.</span></a>
+        </div>
+    </nav>
+
+</header><!-- header 끝 -->
+
+
+<!-- main 시작 -->
+<main>
+
+<!-- video section 시작 -->
+<section style= "width: 100vw;  position: relative; background-color: black;">
+
+  <video autoplay muted loop style= "min-width: 100vw; min-height: 100vh;">
+      <source src="video/huge_work.mp4" type="video/mp4">
+       당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+  </video>
+  <h2 style="width: 100px; height: 100px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; top: 45vh; left: 45vw;">▶</h2>
+  
+</section>
+  
+<!-- grid_header section 시작 -->
+<section class="work_02">Make something you love.</section>
+
+<!-- 썸네일 시작 -->
+<section class="work_03"> 
+
+  <ul class="work_03_ul">
+    <li><a>
+      <h4>Scott Sports.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Android.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>AMC Theatres.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Canada Goose.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Google.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Gucci.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Hulu.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Kohl's.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>LG.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Lenovo.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>NBC Universal.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Nike.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Pfizer.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Procter & Gamble.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Randstad.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Telus.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li><a>
+      <h4>Zelle.</h4>
+      <h5>>>></h5>
+    </a></li>
+    <li>
+
+    </li>
+    
+  </ul>
+
+</section> 
+
+<!-- 클라이언트 시작 -->
+<section class="work_04">
+
+  <div class="work_04_wrap">
+
+    <div class="work_04_left" style="width: 32.20339%;">
+      <hr>
+      <h4>Select clients.</h4>
+    </div>
+
+    <ul class="work_04_right">
+      <li><img src="img/work/logosAMEX.png" alt="American Express Logo"></li>
+      <li><img src="img/work/CHRYSLER.png" alt="American Express Logo"></li>
+      <li><img src="img/work/logo_enel.png" alt="American Express Logo"></li>
+      <li><img src="img/work/ESTEE1.png" alt="American Express Logo"></li>
+      <li><img src="img/work/Four_Seasons.png" alt="American Express Logo"></li>
+      <li><img src="img/work/Eli_Lilly.png" alt="American Express Logo"></li>
+      <li><img src="img/work/logo_lowes.png" alt="American Express Logo"></li>
+      <li><img src="img/work/LVMH.png" alt="American Express Logo"></li>
+      <li><img src="img/work/Mcdonalds.png" alt="American Express Logo"></li>
+      <li><img src="img/work/Nestle.png" alt="American Express Logo"></li>
+      <li><img src="img/work/TD_Bank.png" alt="American Express Logo"></li>
+      <li><img src="img/work/Reuters.png" alt="American Express Logo"></li>
+      <li><img src="img/work/Time_Warner.png" alt="American Express Logo"></li>
+      <li><img src="img/work/logo_united.png" alt="American Express Logo"></li>
+      <li><img src="img/work/logosUPS.png" alt="American Express Logo"></li>
+      <li><img src="img/work/United_Technologies.png" alt="American Express Logo"></li>
+      
+    </ul>
+  </div>
+</section>
+
+<!-- main last 시작 -->
+<section class="main_last">
+ <div>
+  <div class="main_last_wrap">
+    <a class="main_last_left"></a>
+    <a class="main_last_right">
+      <h2>Don't Copy Star Trek.</h2>
+      <p>Why fictional futures limit our ability to innovate — and how to find better inspiration for tomorrow’s technology.</p>
+    </a>
+  </div>
+ </div>
+</section>
+
+
+</main>
+ 
+  
+
+<!-- footer 시작 -->
+<footer class="home_footer bg_color_black color_wh"> 
+    <div>
+       <div class="footer_content_left">
+           <div>HUGE</div>
+           <p class="color_wh">Make something you love.</p> 
+       </div>  
+    
+       <div class="footer_content_right"> 
+           <div>
+              <a href="hello.html">Hello</a>
+              <a href="work.html">Work</a>
+              <a href="cbout.html">About</a>
+              <a href="careers.html">Careers</a>
+              <a href="contact.html" class="margin_right_none">Contact</a>
+           </div>
+           <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+              CCPA Privacy Notice<br>
+              Modern Slavery Act Statement
+           </p>
+        </div>
+    </div> 
+</footer><!-- footer 끝 -->
+
+
+</body> 
+
+</html>

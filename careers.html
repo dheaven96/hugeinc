@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <title>Huge Inc.</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="Hevin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/destyle.css"><!-- 브라우저 초기화 -->
+  <link rel="stylesheet" type="text/css" href="css/common.css"><!-- 공통요소 -->
+  <link rel="stylesheet" type="text/css" href="css/home.css"><!-- home 페이지 -->
+  <link rel="stylesheet" type="text/css" href="css/careers.css"><!-- careers 페이지 -->
+
+<!-- 구글 웹 폰트 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+
+  <script>
+/*  변수 선언  */
+   var header_state = 0;    /* 헤더 보이기 상태 */
+  
+        function LogoClick()  {
+          if (header_state == 0)  {
+            document.getElementById("home_header").style ="visibility:visible;";
+            header_state = 1; /* 헤더 visible 상태 기억 */
+          } 
+          else {document.getElementById("home_header").style ="visibility:hidden;";
+              header_state = 0; /* 헤더 hidden 상태 기억 */
+          } 
+        }
+  
+   </script>
+</head>
+
+<body>
+
+<!-- 원래 Home_logo
+<div class="logo_box">
+   <div class="logo">H</div>
+</div>  -->
+
+<!-- Home_logo 시작 -->
+<div id="logo_h" onclick="LogoClick()">H</div>
+
+
+<!-- header 시작 -->
+<header id="home_header">
+
+    <nav class="gnb">
+        <ul class="menu_wrap">
+          <li>
+            <a href="index_3.24종합.html">Hello.</a>
+            <p>Today at Huge.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="work.html">Work.</a>
+            <p>What we've made.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="about.html">About.</a>
+            <p>Who we are.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="careers.html">Careers.</a>
+            <p>Join the team.</p>
+            <div></div>
+          </li>
+          <li>
+            <a href="contact.html">Contact.</a>
+            <p>Get in touch.</p>
+            <div></div>
+          </li>
+        </ul>
+    
+        <div class="gnb_aside">
+          <p class="">Explore our thought leadership at</p>
+          <a href="magenta.html">MAGENTA<span>.</span></a>
+        </div>
+    </nav>
+
+</header><!-- header 끝 -->
+
+
+<!-- main 시작 -->
+<main>
+
+<!-- video section 시작 -->
+<section class="hero_video">
+
+  <video autoplay muted loop poster="img/HugeInc_Recruting.png">
+    <source src="video/Culture_RESIZE.mp4" type="video/mp4">
+      당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+  </video>
+  
+</section>
+  
+
+<!-- careers_our 시작 -->
+<section class="call_to_action">
+
+  <div class="call_to_action_container">
+    <h3 class="h3_serif">Our commitment to diversity, equity and inclusion has shaped our values.</h3>
+    <p>Huge believes that belonging and community are fostered when we give a shit about equality, inclusion, and accessibility. We're at our best when everyone is engaged and contributing to a more diverse and inclusive workplace.</p>
+    <h5><a class="call_to_action_button">View open positions</a></h5>
+  </div>
+
+ </section>
+
+
+<!-- Why Huge 시작 -->
+<section class="why_huge">
+
+  <div class="why_huge_container">
+
+    <div class="section_subtitle">
+      <hr class="section_subtitle_rule_bl">
+      <h6>Why Huge?</h6>
+    </div>
+        
+    <div class="why_huge_content">
+      <h2 class="why_huge_title h3_serif">What would the world be like if companies put user needs first?</h2>
+      <p class="why_huge_text">Huge was founded in an attempt to answer this question. Two decades later we've demonstrated that industries change and lives are improved when design, technology, and communications come together to solve problems for people. To do this, we've built a company of experts with diverse backgrounds who believe technology should be used to deliver better services and experiences for people. We give them the freedom to make things that matter, working alongside colleagues they respect.</p>
+      <p class="why_huge_text_2">
+      We're a company that prizes entrepreneurialism and embraces constant change. Over the years, five perspectives have come to define the way we work:</p>
+    </div>
+  </div>
+
+ </section>
+
+
+ <!-- 5 ways 시작 -->
+ <section class="careers_ways">
+
+  <div class="careers_ways_container">
+
+    <div class="section_subtitle">
+      <hr class="section_subtitle_rule_wh">
+      <h6 class="color_wh">5 ways.</h6>
+    </div>
+        
+    <ul class="careers_ways_content">
+
+      <li>
+        <div>
+         <h2 class="careers_ways_title color_wh">Be honest.</h2>
+         <p class="careers_ways_text color_wh">Don’t be afraid to say what you think. Strong teams are built on different perspectives.</p>
+        </div>
+        <span><p class="color_wh">I</p></span>
+      </li>
+      <li>
+        <div>
+         <h2 class="careers_ways_title color_wh">Embrace the unknown.</h2>
+         <p class="careers_ways_text color_wh">The future is uncertain, but you can be ready for it.</p>
+        </div>
+        <span><p class="color_wh">II</p></span>
+      </li>
+      <li>
+        <div>
+         <h2 class="careers_ways_title color_wh">Take chances.</h2>
+         <p class="careers_ways_text color_wh">You can’t be right until you know what’s wrong.</p>
+        </div>
+        <span><p class="color_wh">III</p></span>
+      </li>
+      <li>
+        <div>
+         <h2 class="careers_ways_title color_wh">Ideas over egos.</h2>
+         <p class="careers_ways_text color_wh">Listen to others and save your energy for what matters.</p>
+        </div>
+        <span><p class="color_wh">IV</p></span>
+      </li>
+      <li>
+        <div>
+         <h2 class="careers_ways_title color_wh">Give a shit.</h2>
+         <p class="careers_ways_text color_wh">If you don’t care, why should anyone else?</p>
+        </div>
+        <span><p class="color_wh">V</p></span>
+      </li>
+
+    </ul>
+
+  </div>
+
+ </section>
+
+
+<!-- main last 시작 -->
+<section class="main_last">
+
+  <div>
+   <div class="main_last_wrap">
+     <a class="main_last_left"></a>
+     <a class="main_last_right">
+       <h2>Don't Copy Star Trek.</h2>
+       <p>Why fictional futures limit our ability to innovate — and how to find better inspiration for tomorrow’s technology.</p>
+     </a>
+   </div>
+  </div>
+
+ </section>
+
+ 
+</main>
+  
+
+<!-- footer 시작 -->
+<footer class="home_footer bg_color_black color_wh"> 
+    <div>
+       <div class="footer_content_left">
+           <div>HUGE</div>
+           <p class="color_wh">Make something you love.</p> 
+       </div>  
+    
+       <div class="footer_content_right"> 
+           <div>
+              <a href="hello.html">Hello</a>
+              <a href="work.html">Work</a>
+              <a href="cbout.html">About</a>
+              <a href="careers.html">Careers</a>
+              <a href="contact.html" class="margin_right_none">Contact</a>
+           </div>
+           <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+              CCPA Privacy Notice<br>
+              Modern Slavery Act Statement
+           </p>
+        </div>
+    </div> 
+</footer><!-- footer 끝 -->
+
+
+</body> 
+
+</html>
