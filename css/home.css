@@ -1,0 +1,123 @@
+/*/ Home 상세페이지 /*/
+
+
+main { width: 100%; transition: padding-top 0.6s;}
+
+/* Home_hello  */
+.home_hello_wrap {width: 100%; height: 100vh; padding: 0; display: flex; justify-content: center; align-items: center; position: relative;}
+ .home_hello_h1 {width: 800px; height: 300px; margin: 0 auto; display: flex; justify-content: center; align-items: center; font-size: 294px; letter-spacing: -6px; padding-left: 24px;}
+ .home_hellohi_h1 { display: none; font-size: 200px; padding-left: 26px;}
+   .home_hello_next {width: 100%; height: 90px; padding: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: calc(100% - 90px);}
+   .home_hello_next_p {line-height: 36px; width: 210px; margin: 0 auto; text-align: center;}
+   .home_hello_next_line {border-left: 1px solid black; width: 1px; height: 50px;}
+
+      
+/* Home_section  */
+.home_section_wrap {width:100%; height:100vh; box-sizing: border-box; display: flex; background-size:cover; background-position: center; word-break: keep all;}
+
+   .home_section_index {width:12.5%; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+      .home_section_index_wrap { display: flex; justify-content: flex-end; padding-left: 40px;}
+        .home_section_index_wrap p { font-weight: 100; line-height: 22px;   letter-spacing: 1px; margin-right: 15px;}
+        .index_line { border-bottom: 1px solid; width: 42%; height: 11px;}
+        .index_title_m {display: none; font-weight: 100; line-height: 22px; letter-spacing: 1px;}
+
+   .home_section_content {width:75%; height: 100vh; padding: 20vh 0; box-sizing: border-box; padding-left:15px;}
+      .home_section_content_wrap {width: 100%; height: 60vh;}
+        .index_title {font-weight: 100; line-height: 22px; letter-spacing: 1px;}
+         .home_section_content_subwrap {width: 45%; height:calc(100% - 22px);  display: flex; flex-direction: column; justify-content: center;}
+           .home_section_content_subwrap h2 {font-weight: 100;}
+           .home_section_content_subwrap div {border-top: 1px solid; width: 20%; height: 11px; margin: 30px 0;}
+           .home_section_content_subwrap p {font-family: Galaxie-Book; font-size: 18px; line-height: 28px; width: 85%;}
+
+   .home_section_detail {width:12.5%; height: 100vh;}
+
+  .home_section_content_subwrap span {white-space: nowrap;}
+
+
+.bg_img_01 {background-image: url(../img/hugeinc.png);}
+.bg_img_02 {background-image: url(../img/GreenHugeinc.png);}
+.bg_img_03 {background-image: url(../img/RealtorHugeinc.jpg);} 
+.bg_img_04 {background-image: url(../img/hugeinc16.png);}
+.bg_img_05 {background-image: url(../img/hugeinc10.png);}
+.bg_img_06 {background-image: url(../img/hugeinc12.png);}
+.bg_img_07 {background-image: url(../img/hugeinc3.jpg);}
+
+
+
+
+/*/// 미디어쿼리 ///*/
+@media screen and (max-width: 999px) {
+  /* Home_section */ 
+  .home_section_index_wrap p { font-size: 16px;  margin-right: 15px; }
+  .index_title {font-size: 16px; }
+
+  .home_section_content_subwrap h2 {font-size: 72px;}
+  .home_section_content_subwrap p { font-size: 16px; width: 100%;} 
+   } 
+
+@media screen and (max-width: 767px) {
+   /* Home_hello */ 
+   .home_hello_h1 { display: none; }
+   .home_hellohi_h1 { display: block;}
+
+   /* Home_section */ 
+   .home_section_wrap { display: flex; flex-direction: column;}
+
+   .home_section_index { width: 100%; height: 21vh; padding-top: 17vh;}
+   .home_section_index_wrap { display: flex; justify-content: flex-start; padding-left: 50px;}
+   .home_section_index_wrap p { font-size: 14px; margin-right: 8px;}
+   .index_line {width: 8%; margin-right: 10px;}
+   .index_title_m { display: block; font-size: 14px;}
+       
+    .home_section_content {width:100%; height: auto; padding: 20px 50px; }
+    .home_section_content_subwrap {width: 80%; height:auto; justify-content: flex-start; }
+      .index_title {display: none;}
+      .home_section_content_subwrap h2 {font-size: 40px; line-height: 46px; letter-spacing: -1px;}
+      .home_section_content_subwrap div {margin: 12px 0 2px; width: 25%;}
+      .home_section_content_subwrap p { width: 98%;}  
+
+   .home_section_detail {display: none;}
+
+  .bg_img_01 {background-image: url(../img/hugeinc4.jpg);}
+  .bg_img_02 {background-image: url(../img/GreenHugeinc2.png);}
+  .bg_img_03 {background-image: url(../img/RealtorHugeinc2.jpg);} 
+  .bg_img_04 {background-image: url(../img/hugeinc16_2.png); background-position: bottom;}
+  .bg_img_05 {background-image: url(../img/hugeinc10_1.jpg); background-position: bottom;}
+  .bg_img_06 {background-image: url(../img/hugeinc14.png);}
+  .bg_img_07 {background-image: url(../img/hugeinc3_2.jpg); background-position: bottom;}
+   } 
+
+
+
+/* 반응형 미디어쿼리 */
+0. word-break: keep all;
+0.로고 클릭시 huge로 변화
+0.인덱스 레터스페이싱 ###
+
+Bp 999 
+1.Hello 사이즈 변화 width 700px
+2.폰트 사이즈 변화
+  H2>>72px
+  H5>>16px
+  
+3.푸터 레이아웃
+ 2단 >> 1단
+
+
+Bp 767 
+1.로고 사이즈 줄어듬
+2.Hello >> Hi
+3.홈섹션 폰트 사이즈 변화
+  H2>>40px
+  H5>>14px
+
+4.홈섹션 레이아웃 변화
+5.홈섹션 배경이미지 변경
+6.메뉴바-길이 너무 긴거 같음
+ 레이아웃변경 
+ js애니메이션 수정 ##
+
+ //스크롤 문제-푸터?//
+
+
+
