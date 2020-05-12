@@ -9,46 +9,53 @@
 
          
 /* 타이포그래피 */
-h1, h2, h3, h4, h5, h6 { font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;}
-p { font-family: Galaxie-Book; -webkit-font-smoothing: antialiased;}
+h1, h2, h3, h4, h5, h6, p { font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased; }
+
+/* <분석>
+font-size: px; line-height: px; font-weight: ; letter-spacing: px;
+
+헤더
+0 로고버튼/ 이미지- 볼드
+
+h5 메뉴명/ 36, 32, 400, normal
+p3 메뉴설명/ 14, 20, 400, -0.65008 북글씨체
+
+p2 메뉴바 설명/ 16, 24, 400, -0.65008 북글씨체
+p2 메뉴바 설명/ 16, 24, 700, normal
+
+홈
+0 헬로우/ 이미지- 볼드
+p 인덱스num,tittle/ 22, 15.9999, 400, normal
+  
+h2 콘텐츠타이틀/ 80, 84, 400, -2
+p1 콘텐츠설명/ 18, 34, 400, -0.27504 북글씨체
+
+h3 상세페이지 큰타이틀/ 56, 70, 400, -4  북글씨체
+h4 상세페이지 콘텐츠타이틀/ 44, 44, 400, normal
+
+h1 상세페이지2 큰타이틀/ 170, 170, 400, normal
+h6 상세페이지2 콘텐츠타이틀/24, 30, 400, normal
+
+푸터
+0 left/ 이미지- 볼드
+p3 right/ 14, 20, 400, normal  
+p4 aside/ 12, 22.667, 400, -0.27504  북글씨체 */
+
 
 h1 {font-size: 170px; line-height: 170px;}
 h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
-h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
-
+h3 {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
 h4 {font-size: 44px; line-height: 44px;}
-h5 {font-size: 24px; line-height: 30px;}
-h6 {font-size: 22px; line-height: 26px;}
+h5 {font-size: 36px; line-height: 32px;}
+h6 {font-size: 24px; line-height: 30px;}
 
-p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
-
-.h3_serif {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
-.h4_sans {font-family: HugeGotic-Bold; font-size: 44px; line-height: 44px;}
-.h5_sans {font-family: HugeGotic-Bold; font-size: 24px; line-height: 30px;}
-.h6_sans {font-family: HugeGotic-Bold; font-size: 22px; line-height: 26px;}
-
-.p_small_1 {font-size: 16px; letter-spacing: -1px;}
-.p_small_2 {font-size: 12px; line-height: 22.667px; letter-spacing: -0.27504px;}
-.p_small_sans {font-size: 14px; line-height: 20px; }
-
-
-/* 분석
-1 Bold 170, 170, normal(0)  h1
-
-2 Bold 80, 84, -2  h2
-3 Bold 56, 70, -4  h3
-
-3 Book 56, 70, -4  .h3_serif
-
-4 Bold 44, 44, 0  .h_h4
-5 Bold 24, 30, 0  .h_h5
-6 Bold 22, 26(16), 0  .h_h6
-
-7 Book 18, 34, -0.27504  p
-8 Book 16, normal, -1  .p_small_1
-
-9 Bold 14, 20, 0  .p_small_sans
-10Book 12, 22.667, -0.27504  .p_small_2  */
+p { font-size: 22px; line-height: 15.9999px;}
+.p1_serif {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
+.p2 { font-size: 16px; line-height: 24px; font-weight: 700;}
+.p2_serif {font-family: Galaxie-Book; font-size: 16px; line-height: 24px; letter-spacing: -0.65008px;}
+.p3 { font-size: 14px; line-height: 20px; font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;}
+.p3_serif {font-family: Galaxie-Book; font-size: 14px; line-height: 20px; letter-spacing: -0.65008px;}
+.p4_serif {font-family: Galaxie-Book; font-size: 12px; line-height: 22.667px; letter-spacing: -0.27504px;}
 
 
 /* color */
@@ -58,7 +65,7 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 .hrcolor_bl {border-top: 1px solid black;}
 .hrcolor_wh {border-top: 1px solid white;}
 
-/* 원래 Home_logo 클래스
+/* 이전 Home_logo 클래스
 .logo_box {width:74px; height:74px; background-color: white; position: fixed; left: calc(50vw - 37px); top: 50px; 
        display: flex; justify-content: center; align-items: center; z-index: 200;}
 .logo {width:48px; height:48px; color: #ea178c; font-family: HugeGotic-Bold; font-size: 36px; font-weight: 600; text-align: center; line-height: 48px;} */
@@ -110,16 +117,15 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 
  .menu_wrap {width: 1050px; height: 90px; display: flex; justify-content: space-between;}
  .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column; align-items:center;}
- .menu_wrap li a {font-family: HugeGotic-Bold; font-size: 36px; color: black; line-height: 36px;}
  .menu_wrap li a:hover {color: #ea178c;}
 
  .menu_wrap hr {width: 100%; display: none;}
- .menu_wrap p {font-family:Galaxie-Book; font-size: 14px; font-weight: 100; line-height: 28px; letter-spacing: -1px;} 
+ .menu_wrap li p {padding: 4px 0; } 
  .menu_wrap li div {border-bottom: 1px solid black; width: 48px; height: 36px;}
 
  .gnb_aside {width: 320px; height: 22px; display: flex; justify-content: center; position: absolute; bottom: 76px; left: calc(50vw - 160px);}
- .gnb_aside p {font-family:Galaxie-Book; font-size: 14px; font-weight: 100; line-height: 22px; letter-spacing: -1px;}
- .gnb_aside a {font-family:HugeGotic-Bold; font-size: 16px; line-height: 21px; margin-left: 6px; padding-top: 1px;}
+ .gnb_aside p {letter-spacing: -1px;}
+ .gnb_aside a {margin-left: 6px; padding-top: 3px;}
  .gnb_aside a:hover {color: #ea178c;}
  .gnb_aside a span {color: #ea178c;}
 
@@ -128,20 +134,19 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 .bg_color_black { background-color: black;}
 
 .home_footer {width: 100%; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
-   .home_footer_content_wrap {}
-   .home_footer > div {width: 100%; height: 90px; padding: 0 calc(12.5% + 2px); display: flex; justify-content: space-between; min-width: 980px;}
+   .home_footer_content_wrap {width: 100%; height: 90px; padding: 0 calc(12.5% + 2px); display: flex; justify-content: space-between; }
 
     .footer_content_left {display: flex; align-items: center;}
       .footer_content_left > div {font-family: HugeGotic-Bold; font-size: 28px; line-height: 36px; border-right: 1px solid #888888; padding-right: 28px; margin-right: 28px; letter-spacing: 2px; }
       .footer_content_left > p {font-family: HugeGotic-Bold; font-size: 18px; line-height: 36px; letter-spacing: 1px;}
 
     .footer_content_right {display: flex; flex-direction: column;}
-      .footer_content_right > div {font-family: HugeGotic-Bold; font-size: 12px; line-height: 24px; color: #c8c8c8; letter-spacing: 1px; margin-bottom: 10px;}
+      .footer_content_right > div { color: #c8c8c8;  margin-bottom: 10px;}
 
       .footer_content_right a {margin-right: 16px;}
       .footer_content_right a:last-child {margin-right: 0;}
 
-      .footer_aside {font-family: Galaxie-Book; font-size: 12px; line-height: 18px; text-align: right; color: #c8c8c8;}
+      .footer_aside { text-align: right; color: #c8c8c8;}
 
 
 /* main_last -홈에서는 제외 */
@@ -162,7 +167,7 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 
 
 /* hero img */
-.hero {width: 100%; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
+.hero_img {width: 100%; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
 
 
 
@@ -171,13 +176,13 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
   /* Header */ 
   .menu_wrap {padding: 0 100px;}
   .menu_wrap li {width: 144px; }
-  .menu_wrap li a {font-size: 32px;  line-height: 32px;}
+  .menu_wrap h5 {font-size: 32px; line-height: 32px;}
 
   /* 퓨터 */ 
   .home_footer {height: 280px; padding: 60px 70px 50px;}
-  .home_footer > div { flex-direction: column; align-items: flex-start; height: 150px; min-width: 360px; padding: 0; }
+  .home_footer_content_wrap { flex-direction: column; align-items: flex-start; height: 150px;  padding: 0; }
   .footer_content_left > div {padding-right: 22px; margin-right: 22px; }
-  .footer_aside {font-family: Galaxie-Book; font-size: 12px; line-height: 18px; text-align: left; color: #c8c8c8;}
+  .footer_aside {text-align: left; }
   } 
 
 @media screen and (max-width: 767px) {
@@ -186,47 +191,24 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
   #logo_open {top: 24px;}
 
   /* Header */ 
-  nav { height: 80vh; padding: 100px 54px 200px;}
+  nav { height: 80vh; padding: 120px 52px 190px;}
   .menu_wrap {width: 100%; height: 100%; flex-direction: column; align-items: center; padding: 0;}
   .menu_wrap li {width: 100%; height: 90px; flex-direction: row; justify-content: space-between; align-items:center; }
-  .menu_wrap li a { font-size: 22px;  line-height: 26px;}
+  .menu_wrap h5 { font-size: 20px;  line-height: 26px;}
 
   .menu_wrap hr {margin: 0 15px; display: block;}
   .menu_wrap p {font-size: 16px; line-height: 26px; white-space: nowrap; } 
   .menu_wrap li div {display: none;}
 
   .gnb_aside { bottom: 60px;}
+
+  /* 퓨터 */ 
+  .home_footer {padding: 60px 20px 50px 44px;}
+  .footer_content_left > div {font-size: 25px; line-height: 34px;  padding-right: 20px; margin-right: 20px; letter-spacing: 2px; }
+      .footer_content_left > p { font-size: 15px; line-height: 24px; letter-spacing: 0.5px;}
+      .footer_content_right a {margin-right: 12px;}
+  
  
   } 
 
-
-
-/* 반응형 미디어쿼리 */
-0. word-break: keep all;
-0.로고 클릭시 huge로 변화
-0.인덱스 레터스페이싱 ###
-
-Bp 999 
-1.Hello 사이즈 변화 width 700px
-2.폰트 사이즈 변화
-  H2>>72px
-  H5>>16px
-  
-3.푸터 레이아웃
- 2단 >> 1단
-
-Bp 767 
-1.로고 사이즈 줄어듬
-2.Hello >> Hi
-3.홈섹션 폰트 사이즈 변화
-  H2>>40px
-  H5>>14px
-
-4.홈섹션 레이아웃 변화
-5.홈섹션 배경이미지 변경 
-6.메뉴바-길이 너무 긴거 같음
- 레이아웃변경 
- js애니메이션 수정 ##
-
- //스크롤 문제-푸터?//
 
