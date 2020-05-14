@@ -1,0 +1,89 @@
+/*/ Work 상세페이지 /*/
+
+
+/* grid_header section */
+.work_slogan {width: 100%; height: 210px; background-color: black; display: flex; justify-content: center; align-items: center; }
+ .work_slogan h3 {min-width: 300px; text-align: center; margin: 0 100px;}
+
+
+/* 썸네일 */
+.work_thumbnail {width: 100%; background-color: black; padding-bottom: 95px;}
+ .work_thumbnail_ul {width: 90vw; margin: 0 auto; display: flex; flex-wrap: wrap;}
+
+  .work_thumbnail_ul li {width: 30vw; height: 30vw; background-size: cover; color: white;}
+
+  .work_thumbnail_ul a {width: 30vw; height: 30vw; padding-left: 30px; padding-top:calc( 30vw - 64px);  display: block; box-sizing: border-box; overflow: hidden; transition: background-color 0.3s, padding-top 0.3s;}
+
+  .work_thumbnail_ul a:hover {background-color: rgba(0,0,0,0.5); padding-top: calc( 29.9vw - 124px); }
+  .work_thumbnail_ul h5 {margin-top: 20px;}
+
+
+.work_thumbnail_ul li:nth-child(1) {background-image: url(../img/work/Thumbnail2.jpg);}
+.work_thumbnail_ul li:nth-child(2) {background-image: url(../img/work/android-tile.jpg);}
+.work_thumbnail_ul li:nth-child(3) {background-image: url(../img/work/AMC_workTile.jpg);}
+.work_thumbnail_ul li:nth-child(4) {background-image: url(../img/work/tile-goose.jpg);}
+.work_thumbnail_ul li:nth-child(5) {background-image: url(../img/work/Google_Tile.jpg);}
+.work_thumbnail_ul li:nth-child(6) {background-image: url(../img/work/Gucci.jpg);}
+.work_thumbnail_ul li:nth-child(7) {background-image: url(../img/work/HULU.jpg);}
+.work_thumbnail_ul li:nth-child(8) {background-image: url(../img/work/Hero-bground.jpg);}
+.work_thumbnail_ul li:nth-child(9) {background-image: url(../img/work/LG_900Tile.jpg);}
+.work_thumbnail_ul li:nth-child(10) {background-image: url(../img/work/Lenovo_WorkTile.jpg);}
+.work_thumbnail_ul li:nth-child(11) {background-image: url(../img/work/tile-today.jpg);}
+.work_thumbnail_ul li:nth-child(12) {background-image: url(../img/work/Nike.jpg);}
+.work_thumbnail_ul li:nth-child(13) {background-image: url(../img/work/Pfizer_tile.jpg);}
+.work_thumbnail_ul li:nth-child(14) {background-image: url(../img/work/SK-II.jpg);}
+.work_thumbnail_ul li:nth-child(15) {background-image: url(../img/work/randstad_casestudy.png);}
+.work_thumbnail_ul li:nth-child(16) {background-image: url(../img/work/Telus.jpg);}
+.work_thumbnail_ul li:nth-child(17) {background-image: url(../img/work/Zelle_workTile.jpg);}
+
+
+/* 클라이언트 */
+.work_clients {width: 100%; background-color: #111111;padding: 140px 0; box-sizing: border-box;}
+  .work_clients_container {width: 74.68354%; display: flex; margin: auto; box-sizing: border-box;}
+    .section_subtitle {width: 32.20339%;}
+    .section_subtitle hr {width: 47.36842%; height:20px; border-top: 1px solid white;}
+
+    .work_clients_logo {display: flex; justify-content: flex-start; width: 66.10169%; flex-wrap: wrap; align-items: center; align-content: flex-start;}
+     .work_clients_logo li {width: 15.38462%; margin-bottom: 50px; margin-right: 10.25641%; box-sizing: border-box;}
+     .work_clients_logo li:nth-child(4n) {margin-right: 0;}
+     .work_clients_logo li img {width: 100%;}
+
+
+
+/*/// 미디어쿼리 ///*/
+@media screen and (max-width: 999px) {
+  .work_slogan h3 {font-size:42px; line-height:53.9px; letter-spacing: -1px;}
+
+  .work_thumbnail {width: 100%; background-color: black; padding-bottom: 95px;}
+   .work_thumbnail_ul {width: 86.9vw; margin: 0 auto; display: flex; flex-wrap: wrap;}
+    .work_thumbnail_ul li {width: 43vw; height: 43vw; background-size: cover; color: white;}
+    .work_thumbnail_ul a {width: 43vw; height: 43vw; padding-left: 30px; padding-top:calc( 43vw - 64px);  display: block; box-sizing: border-box; overflow: hidden; transition: background-color 0.3s, padding-top 0.3s;}
+    .work_thumbnail_ul a:hover {background-color: rgba(0,0,0,0.5); padding-top: calc( 42.9vw - 124px); }
+    .work_thumbnail_ul h4 {font-size: 36px; line-height: 36px;}
+    .work_thumbnail_ul h5 {margin-top: 20px;}
+
+  .work_clients {padding: 100px 0; }
+   .work_clients_container { flex-direction: column;}
+    .section_subtitle {width: 48.97959%; margin-bottom: 50px;}
+     .section_subtitle h6 { font-size: 16px; }
+    .work_clients_logo { width: 100%;}
+     .work_clients_logo li {width: 33.33333%; margin: 0 0 50px;} 
+
+}
+
+@media screen and (max-width: 767px) {
+  .work_slogan h3 {font-size:30px; line-height:42px;}
+   .work_slogan span {white-space: nowrap; }
+
+  .work_thumbnail {width: 100%; background-color: black; padding-bottom: 95px;}
+   .work_thumbnail_ul {width: 86.9vw; margin: 0 auto; display: flex; flex-wrap: wrap;}
+    .work_thumbnail_ul li {width: 86.9vw; height: 86.9vw; background-size: cover; color: white;}
+    .work_thumbnail_ul a {width: 86.9vw; height: 86.9vw; padding-left: 35px; padding-top:calc( 86.9vw - 64px);  display: block; box-sizing: border-box; overflow: hidden; transition: background-color 0.3s, padding-top 0.3s;}
+    .work_thumbnail_ul a:hover {background-color: rgba(0,0,0,0.5); padding-top: calc( 85.9vw - 124px); }
+    .work_thumbnail_ul h4 {font-size: 36px; line-height: 36px;}
+    .work_thumbnail_ul h5 {margin-top: 20px;}
+
+  .work_clients {padding: 60px 0; }
+    .section_subtitle h6 { font-size: 14px; }
+
+}

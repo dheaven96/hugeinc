@@ -1,0 +1,58 @@
+/*/ Contact-ATL 지사 상세페이지 /*/
+
+
+/* contact-atl지사 hero */
+.hero_officeimg {width: 100vw; height: 80vh; background-size: cover;  padding: 46px 0 60px;}
+
+.hero_contact_atl {background-image: url(../img/contact/SkateGIF-v3.gif); }
+
+.hero_container {width: 74.68354%; height: calc(80vh - 104px); margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start; position: relative;}
+  .hero_index {width: 17vw; height: 22px; display: flex; justify-content: space-between; position: absolute; }
+   .hero_index div {border-bottom: 2px solid; width: 7.7vw; height: 13px;}
+
+  .hero_office_title {height: calc(80vh - 126px); display: flex; align-items: flex-end; }
+  .hero_subtitle { height: 22px; display: flex; justify-content: space-between;  }
+
+
+/* the_office */
+.the_office {width: 100vw; background-color: white; padding: 140px 0; box-sizing: border-box;}
+.the_office_container {width: 74.68354%; margin: 0 auto; display: flex;}
+ .section_subtitle_nopadding {min-width: 32.20339%; }
+  .section_subtitle_rule_bl {width: 47.36842%;  margin-bottom: 20px; border-top: 1px solid black;}
+
+ .the_office_content {width: 66.10169%; margin-left: 1.69492%;}
+  the_office_title {margin-bottom: 70px;}
+  .the_office_text {padding-bottom: 25px;}
+
+
+ /* gallery */
+.gallery {width: 100%; background-color: white; padding-bottom: 95px;}
+ .gallery_container {width: 87%;  height: 2600px; margin: 0 auto; display: block; box-sizing: border-box; }
+
+  .gallery_cell_1 {width: 100%; height: 30%; margin-bottom: 1.26582vw; }
+  .gallery_cell_1 img {width: 100%; height: 100%; background-size: cover;}
+
+  .gallery_cell_2 {width: 100%; height: 30%; margin-bottom: 1.26582vw; display: flex;}
+  .gallery_cell_2 :first-child {width: 50%; height: 100%; background-size: cover;}
+  .gallery_cell_2 :nth-child(2) {width: 50%; height: 100%;}
+  .gallery_cell_2 :nth-child(2)>img {width: 100%; height: 50%; background-size: cover;}
+
+  .gallery_cell_3 {width: 100%; height: 20%; margin-bottom: 1.26582vw; display: flex; }
+  .gallery_cell_3 :first-child {width: 35%; height: 100%; background-size: cover;}
+  .gallery_cell_3 :nth-child(2) {width: 65%; height: 100%; background-size: cover;}
+
+  .gallery_cell_4 {width: 100%; height: 20%; margin-bottom: 1.26582vw; display: flex; }
+  .gallery_cell_4 img {width: 50%; height: 100%; background-size: cover;}
+
+
+
+
+
+/* contact_apply */
+.call_to_action {width: 100vw; background-color: white; padding: 150px 0; box-sizing: border-box;}
+.call_to_action_container {width: 74.68354%; margin: 0 auto; display: flex; flex-direction: column; justify-content: space-between;}
+ .call_to_action h3 {margin-bottom: 20px;}
+ .call_to_action p {margin-bottom: 60px;}
+
+ .call_to_action_button {padding: 30px 45px; background-color: black; color: white; display: inline-block;}
+ .call_to_action_button:hover {opacity: 0.5;}

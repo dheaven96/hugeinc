@@ -13,25 +13,26 @@ main { width: 100%; transition: padding-top 0.6s;}
 
       
 /* Home_section  */
-.home_section_wrap {width:100%; height:100vh; box-sizing: border-box; display: flex; background-size: cover; background-position: center; word-break: keep all;}
+.home_section_wrap {width:100%; height:100vh; box-sizing: border-box; display: flex; background-size: cover; background-position: center; word-break: keep-all;}
 
   .home_section_index {width:12.5%; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
     .home_section_index_wrap { display: flex; justify-content: flex-end; padding-left: 40px;}
-      .home_section_index_wrap p { line-height: 22px;  margin-right: 15px;}
+      .home_section_index_wrap h6 { line-height: 22px;  margin-right: 15px;}
       .index_line { border-bottom: 1px solid; width: 42%; height: 11px;}
       .index_title_m {line-height: 22px; font-weight: 100; display: none; }
 
   .home_section_content {width:75%; height: 100vh; padding: 20vh 0; box-sizing: border-box; padding-left:15px;}
     .home_section_content_wrap {width: 100%; height: 60vh;}
-      .index_title {line-height: 22px; font-weight: 100;  }
+      .index_title {line-height: 22px; font-weight: 100; }
 
       .home_section_content_subwrap {width: 45%; height:calc(100% - 22px);  display: flex; flex-direction: column; justify-content: center;}
-       .home_section_content_subwrap div {border-top: 1px solid; width: 20%; height: 11px; margin: 30px 0 20px;}
-       .home_section_content_subwrap p {line-height: 30px; width: 88%;}
+       .home_section_content_subwrap div {border-top: 1px solid; width: 20%; height: 11px; margin: 26px 0 20px;}
+       .home_section_content_subwrap p {line-height: 30px; width: 89%;}
 
    .home_section_detail {width:12.5%; height: 100vh;}
 
   .home_section_content_subwrap span {white-space: nowrap;}
+  #home_02 h2 {line-height: 78px;}
 
 
 .bg_img_01 {background-image: url(../img/hugeinc.png);}
@@ -48,7 +49,7 @@ main { width: 100%; transition: padding-top 0.6s;}
 /*/// 미디어쿼리 ///*/
 @media screen and (max-width: 999px) {
   /* Home_section */ 
-  .home_section_index_wrap p { font-size: 16px;  margin-right: 15px; }
+  .home_section_index_wrap h6 { font-size: 16px;  margin-right: 15px; }
   .index_title {font-size: 16px; }
 
   .home_section_content_subwrap h2 {font-size: 72px;}
@@ -65,14 +66,14 @@ main { width: 100%; transition: padding-top 0.6s;}
 
    .home_section_index { width: 100%; height: 21vh; padding-top: 17vh;}
     .home_section_index_wrap { display: flex; justify-content: flex-start; padding-left: 50px;}
-     .home_section_index_wrap p { font-size: 14px; margin-right: 8px;}
+     .home_section_index_wrap h6 { font-size: 14px; margin-right: 8px;}
      .index_line {width: 8%; margin-right: 10px;}
      .index_title_m { display: block; font-size: 14px;}
        
     .home_section_content {width:100%; height: auto; padding: 20px 50px 10px; }
      .home_section_content_subwrap {width: 80%; height:auto; justify-content: flex-start; }
       .index_title {display: none;}
-      .home_section_content_subwrap h2 {font-size: 40px; line-height: 46px; letter-spacing: -1px;}
+      .home_section_content_subwrap h2, #home_02 h2 {font-size: 40px; line-height: 46px; letter-spacing: -1px;}
       .home_section_content_subwrap div {margin: 12px 0 2px; width: 25%;}
       .home_section_content_subwrap p { width: 98%;}  
 
@@ -92,7 +93,7 @@ main { width: 100%; transition: padding-top 0.6s;}
 /* 반응형 미디어쿼리 */
 //텍스트위계 정리 >> 뼈대 다 바꿈 >>css수정
 360px고려할것
-0. word-break: keep all; / white-space: nowrap; 
+0. word-break: keep-all; / white-space: nowrap; 
 0.로고 클릭시 huge로 변화
 
 Bp 999 

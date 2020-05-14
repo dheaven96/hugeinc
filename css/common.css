@@ -9,12 +9,12 @@
 
          
 /* 타이포그래피 */
-h1, h2, h3, h4, h5, h6, p { font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased; }
 
 /* <분석>
 font-size: px; line-height: px; font-weight: ; letter-spacing: px;
 
-헤더
+헤더..그냥 디브로 하면 될듯
 0 로고버튼/ 이미지- 볼드
 
 h5 메뉴명/ 36, 32, 400, normal
@@ -46,14 +46,19 @@ h1 {font-size: 170px; line-height: 170px;}
 h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
 h3 {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
 h4 {font-size: 44px; line-height: 44px;}
+
 h5 {font-size: 36px; line-height: 32px;}
 h6 {font-size: 24px; line-height: 30px;}
+p { font-size: 22px; line-height: 15.9999px; }
 
-p { font-size: 22px; line-height: 15.9999px;}
-.p1_serif {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
-.p2 { font-size: 16px; line-height: 24px; font-weight: 700;}
+.h5_big {font-size: 36px; line-height: 32px;}
+h5 {font-size: 24px; line-height: 30px;}
+h6 { font-size: 22px; line-height: 15.9999px; }
+
+p {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing: -0.27504px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+.p2 {font-family: HugeGotic-Bold; font-size: 16px; line-height: 24px; font-weight: 700;}
 .p2_serif {font-family: Galaxie-Book; font-size: 16px; line-height: 24px; letter-spacing: -0.65008px;}
-.p3 { font-size: 14px; line-height: 20px; font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;}
+.p3 {font-family: HugeGotic-Bold; font-size: 14px; line-height: 20px; font-family: HugeGotic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;}
 .p3_serif {font-family: Galaxie-Book; font-size: 14px; line-height: 20px; letter-spacing: -0.65008px;}
 .p4_serif {font-family: Galaxie-Book; font-size: 12px; line-height: 22.667px; letter-spacing: -0.27504px;}
 
@@ -149,26 +154,27 @@ p { font-size: 22px; line-height: 15.9999px;}
       .footer_aside { text-align: right; color: #c8c8c8;}
 
 
-/* main_last -홈에서는 제외 */
-.main_last {width: 100%; background-image: url(../img/9.jpg); background-size: cover;}
-  .main_last > div:first-child {background-color: rgba(0,0,0,0.7); padding: 200px 0;}
-  .main_last_wrap {width: 100vw; display: flex; justify-content: start;}
-  .main_last_left {width: 18.98734%; padding-bottom: 18.98734%; margin-left: 12.65823%; margin-right: 1.25%; background-image: url(../img/magenta-hero.gif); background-size: cover;}
+/* main last -home 제외 나머지 */
+.main_last {width: 100%; background-image: url(../img/balancing.jpg); background-size: cover; background-position: center;}
+  .bg_color_warp {width: 100%; background-color: rgba(0,0,0,0.7); padding: 200px 0;}
 
-  .main_last_right {width: 43.03797%; margin-left: 5.06329%; margin-right: 1.26582%; display: flex; flex-direction: column; justify-content: center;}
-  .main_last_right h2 {color: white;}
-  .main_last_right p {color: white;}
+  .main_last_wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
+   .main_last_left {width: 18.98734%; height: 18.98734vw; display: block; margin-left: 13.1%; padding-bottom: 18.98734%; padding-left: 12.65823%; margin-right: 1.25%; background-image: url(../img/magenta-hero.gif); background-size: cover; background-position: center; background-repeat: no-repeat;}
+   .main_last_right {width: 43.03797%; margin-left: 5.06329%; margin-right: 16%; display: flex; flex-direction: column; justify-content: center;}
 
 
-
-/* hero video */
+/* hero video - Work,Careers */
 .hero_video {width: 100%; height: 80vh; display: flex; justify-content: center; align-items: center; position: relative;}
-.hero_video video {min-width: 100vw; min-height: 80vh; border: none; right: 0; bottom: 0; position: absolute; background-size: cover;}
+ .hero_video video {min-width: 100vw; min-height: 80vh; border: none; right: 0; bottom: 0; position: absolute; background-size: cover;}
+ .hero_video_button {width: 74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; font-size: 24px; text-align: center; line-height: 74px; z-index: 100; position: absolute; top: calc(50% - 37px); left: calc(50% - 37px);}
 
+.hero_video {width: 100%; height: 80vh; display:block; overflow: hidden; padding: 140px 0 60px;  position: relative; }
+ .hero_video video {min-width: 100%; min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
-/* hero img */
+ 
+/* hero img - About.Contact */
 .hero_img {width: 100%; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
-
+ .hero_title {width: 74.68354%; height: calc(80vh - 200px); display: flex; align-items: flex-end; margin: 0 auto;}
 
 
 /*/// 미디어쿼리 ///*/
@@ -183,7 +189,15 @@ p { font-size: 22px; line-height: 15.9999px;}
   .home_footer_content_wrap { flex-direction: column; align-items: flex-start; height: 150px;  padding: 0; }
   .footer_content_left > div {padding-right: 22px; margin-right: 22px; }
   .footer_aside {text-align: left; }
+
+  /* main last  */
+  .main_last_right h2 {font-size: 72px; line-height: 75.0002px;}
+
+  /* hero img */
+  .hero_title {font-size: 104px; line-height: 91px;}
   } 
+
+
 
 @media screen and (max-width: 767px) {
  /* Home_logo */ 
@@ -207,7 +221,21 @@ p { font-size: 22px; line-height: 15.9999px;}
   .footer_content_left > div {font-size: 25px; line-height: 34px;  padding-right: 20px; margin-right: 20px; letter-spacing: 2px; }
       .footer_content_left > p { font-size: 15px; line-height: 24px; letter-spacing: 0.5px;}
       .footer_content_right a {margin-right: 12px;}
-  
+
+  /* main last  */
+  .bg_color_warp { padding: 80px 0;}
+.main_last_wrap {flex-direction: column; align-items: flex-start;}
+.main_last_left {width: 35.89744%; height: 35.89744vw; margin-right: 2.5641%; margin-left: 12.82051%;}
+.main_last_right {width: 74.35897%; margin-right: 2.5641%; margin-left: 12.82051%; margin-top: 50px;}
+.main_last_right h2 {font-size: 40px; line-height: 44px; letter-spacing: -1px;}
+
+/* hero video */
+.hero_video {height: 70vh;}
+.hero_video_button {width: 62px; height: 62px; font-size: 20px; line-height: 62px; }
+
+/* hero img */
+.hero_img {height: 70vh;}
+ .hero_title {height: calc(70vh - 200px); font-size: 60px; line-height: 61.9px;}
  
   } 
 
