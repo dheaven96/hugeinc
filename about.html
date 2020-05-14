@@ -11,7 +11,6 @@
 <!-- css -->
   <link rel="stylesheet" type="text/css" href="css/destyle.css"><!-- 브라우저 초기화 -->
   <link rel="stylesheet" type="text/css" href="css/common.css"><!-- 공통요소 -->
-  <link rel="stylesheet" type="text/css" href="css/home.css"><!-- home 페이지 -->
   <link rel="stylesheet" type="text/css" href="css/about.css"><!-- about 페이지 -->
 
 <!-- 구글 웹 폰트 -->
@@ -37,11 +36,6 @@
 
 <body>
 
-<!-- 원래 Home_logo
-<div class="logo_box">
-   <div class="logo">H</div>
-</div>  -->
-
 <!-- Home_logo 시작 -->
 <div id="logo_h" onclick="LogoClick()">H</div>
 
@@ -49,40 +43,45 @@
 <!-- header 시작 -->
 <header id="home_header">
 
-    <nav class="gnb">
-        <ul class="menu_wrap">
-          <li>
-            <a href="index_3.24종합.html">Hello.</a>
-            <p>Today at Huge.</p>
-            <div></div>
-          </li>
-          <li>
-            <a href="work.html">Work.</a>
-            <p>What we've made.</p>
-            <div></div>
-          </li>
-          <li>
-            <a href="about.html">About.</a>
-            <p>Who we are.</p>
-            <div></div>
-          </li>
-          <li>
-            <a href="careers.html">Careers.</a>
-            <p>Join the team.</p>
-            <div></div>
-          </li>
-          <li>
-            <a href="contact.html">Contact.</a>
-            <p>Get in touch.</p>
-            <div></div>
-          </li>
-        </ul>
-    
-        <div class="gnb_aside">
-          <p class="">Explore our thought leadership at</p>
-          <a href="magenta.html">MAGENTA<span>.</span></a>
-        </div>
-    </nav>
+  <nav class="gnb">
+      <ul class="menu_wrap">
+        <li>
+          <a href="index.html"><h5 class="h5_big">Hello.</h5></a>
+          <hr>
+          <p class="p3_serif">Today at Huge.</p>
+          <div></div>
+        </li>
+        <li>
+          <a href="work.html"><h5 class="h5_big">Work.</h5></a>
+          <hr>
+          <p class="p3_serif">What we've made.</p>
+          <div></div>
+        </li>
+        <li>
+          <a href="about.html"><h5 class="h5_big">About.</h5></a>
+          <hr>
+          <p class="p3_serif">Who we are.</p>
+          <div></div>
+        </li>
+        <li>
+          <a href="careers.html"><h5 class="h5_big">Careers.</h5></a>
+          <hr>
+          <p class="p3_serif">Join the team.</p>
+          <div></div>
+        </li>
+        <li>
+          <a href="contact.html"><h5 class="h5_big">Contact.</h5></a>
+          <hr>
+          <p class="p3_serif">Get in touch.</p>
+          <div></div>
+        </li>
+      </ul>
+  
+      <div class="gnb_aside">
+        <p class="p2_serif">Explore our thought leadership at</p>
+        <a href="https://magenta.as"><p class="p2">MAGENTA<span>.</span></p></a>
+      </div>
+  </nav>
 
 </header><!-- header 끝 -->
 
@@ -91,7 +90,7 @@
 <main>
 
 <!-- About_hero 시작 -->
- <section class="hero hero_about">
+ <section class="hero_img hero_about">
      <h1 class="hero_title color_wh">Born in Brooklyn.</h1>
  </section>
 
@@ -106,8 +105,8 @@
     </div>
         
     <div class="about_us_content">
-      <h2 class="about_us_title h3_serif">We grow businesses by creating experiences people love.</h2>
-      <p class="about_us_text">Today, people embrace companies with the customer experiences that best meet their needs. Huge transforms companies by designing these best-in-class experiences, driven by strong creative and rooted in the technology, data, and organizational strategy required for operational excellence. We combine these capabilities into a single solution, creating unified brand experiences that change industries and foster meaningful relationships with users. This user-centric approach has made us the fastest-growing agency of the past decade.</p>
+      <h3>We grow businesses by creating experiences people love.</h3>
+      <p>Today, people embrace companies with the customer experiences that best meet their needs. Huge transforms companies by designing these best-in-class experiences, driven by strong creative and rooted in the technology, data, and organizational strategy required for operational excellence. We combine these capabilities into a single solution, creating unified brand experiences that change industries and foster meaningful relationships with users. This user-centric approach has made us the fastest-growing agency of the past decade.</p>
     </div>
   </div>
 
@@ -313,11 +312,11 @@
         
     <div class="section_subtitle_nopadding">
       <hr class="section_subtitle_rule_bl">
-      <h6 class="color_bl">Our leadership.</h6>
+      <h6>Our leadership.</h6>
     </div>
 
     <div>
-      <ul class="our_leadership_list color_bl">
+      <ul class="our_leadership_list">
         <li>
           <h6><a>Pete Stein</a></h6>
           <p>CEO</p>
@@ -385,17 +384,15 @@
 
 <!-- main last 시작 -->
 <section class="main_last">
-
-  <div>
+  <div class="bg_color_warp">
    <div class="main_last_wrap">
-     <a class="main_last_left"></a>
+     <a class="main_last_left" href="https://magenta.as"></a>
      <a class="main_last_right">
-       <h2>Don't Copy Star Trek.</h2>
-       <p>Why fictional futures limit our ability to innovate — and how to find better inspiration for tomorrow’s technology.</p>
+       <h2 class="color_wh">Balancing Careers in Art and Design.</h2>
+       <p class="p1_serif color_wh">Alison Kudlow is a UX designer by day, a sculptor by night. Here’s how she makes it work.</p>
      </a>
    </div>
   </div>
-  
  </section>
 
 
@@ -403,27 +400,32 @@
     
 
 <!-- footer 시작 -->
-<footer class="home_footer bg_color_black color_wh"> 
-    <div>
-       <div class="footer_content_left">
-           <div>HUGE</div>
-           <p class="color_wh">Make something you love.</p> 
-       </div>  
+<footer class="home_footer bg_color_black color_wh">
+
+  <div class="home_footer_content_wrap">
+
+    <div class="footer_content_left">
+      <div>HUGE</div>
+      <p class="color_wh">Make something you love.</p> 
+    </div>  
     
-       <div class="footer_content_right"> 
-           <div>
-              <a href="hello.html">Hello</a>
-              <a href="work.html">Work</a>
-              <a href="cbout.html">About</a>
-              <a href="careers.html">Careers</a>
-              <a href="contact.html" class="margin_right_none">Contact</a>
-           </div>
-           <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
-              CCPA Privacy Notice<br>
-              Modern Slavery Act Statement
-           </p>
-        </div>
-    </div> 
+    <div class="footer_content_right"> 
+      <div>
+        <a href="hello.html" class="p3">Hello</a>
+        <a href="work.html" class="p3">Work</a>
+        <a href="cbout.html" class="p3">About</a>
+        <a href="careers.html" class="p3">Careers</a>
+        <a href="contact.html" class="p3 margin_right_none">Contact</a>
+      </div>
+
+      <p class="p4_serif footer_aside">© 2020 Huge LLC. Legal.<br>
+          CCPA Privacy Notice<br>
+          Modern Slavery Act Statement
+      </p>
+    </div>
+
+  </div> 
+
 </footer><!-- footer 끝 -->
 
 
