@@ -16,34 +16,34 @@
    .about_us_content p {padding-bottom: 25px;}
 
 
- /* our_servise */
+ /* How we do it - our_servise */
  .our_servise {width: 100%; background-color: black; padding: 140px 0; box-sizing: border-box;}
- .our_servise_container {width: 74.68354%; margin: 0 auto;}
+ .our_servise_container {width: 74.68354%; margin: 0 auto 40px;}
 
  .section_subtitle_rule_wh {width: 47.36842%;  margin-bottom: 20px; border-top: 1px solid white;}
 
 .section_subtitle_nopadding {width: 32.20339%; margin-bottom: 50px;}
 .our_servise_content_container {width: 100%; display: flex;}
 
-.our_servise_content {width: 57.62712%;}
+.our_servise_content {width: 57.62712%; margin-bottom: 70px;}
 .our_servise_content_title {margin-bottom: 50px;}
 .our_servise_content_text {column-count: 2; width: 100%;}
 
 .our_servise_infographic {width: 32.20339%; margin-left: 5%;}
-.our_servise_infographic_img {width: 100%; padding: 2% 0 0 5%;}
+.our_servise_infographic_img {width: 100%; padding: 2% 0 0 5%; min-width: 400px;}
 
 
 .our_servise_list_container {width: 74.68354%; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 60px;}
-.our_servise_list {width: 32.20339%;}
-.our_servise_list h6 {margin-bottom: 40px;}
+.our_servise_list {width: 32.20339%; margin-bottom: 40px;}
+.our_servise_list h5 {margin-bottom: 40px;}
 .our_servise_list li {padding-bottom: 20px; margin-bottom: 20px; margin-right: 15%; border-bottom: 1px solid #222;}
 
-.our_servise_list a:hover {color: #ea178c;}
+.our_servise_list a:hover {color: #ea178c;  cursor: pointer;}
 .our_servise_list li:nth-last-child(1) {border: none;}
 
 
- /* our_culture */
- .our_culture {width: 100%; background-color: #cecdcf; padding: 140px 0; box-sizing: border-box; position: relative;}
+ /* Made with love - our_culture */
+ .our_culture {width: 100%; background-color: #cecdcf; padding: 140px 0 100px; box-sizing: border-box; position: relative;}
 
  .our_culture_container {width: 74.68354%; margin: 0 auto;} 
  .our_culture_title {margin: 120px 0 100px;}
@@ -54,9 +54,9 @@
  .our_culture_list h5 {margin-bottom: 7px;}
  .our_culture_list p {width: 85%;}
 
- .our_culture_list a:hover {color: #ea178c;}
+ .our_culture_list a:hover {color: #ea178c;  cursor: pointer;}
 
- .our_culture_background {position: absolute; top: 100px; right: 200px; bottom: -6vh; right: 10%; width: 40%;}
+ .our_culture_background {position: absolute; bottom: -6vh; right: 10%; width: 40%;}
  .our_culture_background img {width: 100%;}
 
 
@@ -64,29 +64,28 @@
  .our_offices {width: 100%; background-color: black; padding: 140px 0; box-sizing: border-box;}
  .our_offices_container {width: 74.68354%; margin: 0 auto;} 
 
- .our_offices_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 10px;}
+ .our_offices_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 20px;}
  .our_offices_list li {width: 23.5%; margin-left: 2%; padding-top: 20px; margin-bottom: 25px; border-top: 1px solid #666;}
  .our_offices_list li:nth-child(4n+1) {margin-left: 0;}
  .our_offices_list p {color: white; opacity: 0.5;}
- .our_offices_list a:hover {color: #ea178c;}
+ .our_offices_list a:hover {color: #ea178c;  cursor: pointer;}
 
 
   /* our_leadership */
   .our_leadership {width: 100%; background-color: white; padding: 140px 0; box-sizing: border-box;}
   .our_leadership_container {width: 74.68354%; margin: 0 auto;} 
  
-  .our_leadership_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 10px;}
-  .our_leadership_list li {width: 32%; margin-left: 2%; padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #666;}
-  .our_leadership_list li:nth-child(3n+1) {margin-left: 0;}
-  .our_leadership_list p {color: #666;}
-  .our_leadership_list a:hover {color: #ea178c;}
-  .our_leadership_list li:nth-last-child(1) {border: none;}
-  .our_leadership_list li:nth-last-child(2) {border: none;}
-
-
+  .our_leadership_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 20px;}
+   .our_leadership_list li {width: 32%; margin-left: 2%; padding: 50px 0 40px;}
+   .our_leadership_list li:nth-child(3n+1) {margin-left: 0;}
+   .our_leadership_list li:nth-child(n+4) { border-top: 1px solid rgba(0,0,0,0.3);}
+   .our_leadership_list p {color: rgba(0,0,0,0.3); line-height: 28px; margin-top: 8px;}
+   .our_leadership_list a:hover {color: #ea178c; cursor: pointer;}
+  
 
   /*/// 미디어쿼리 ///*/
 @media screen and (max-width: 999px) {
+/* about_us */
   .about_us {padding: 100px 0; }
    .about_us_container { flex-direction: column;}
     .section_subtitle {width: 48.97959%; margin-bottom: 50px;}
@@ -94,15 +93,96 @@
 
     .about_us_content { width: 100%; margin-left: 0px;}
      .about_us_content h3 {margin-bottom: 50px; font-size:42px; line-height:53.9px; letter-spacing: -1px;}
+ 
+/* How we do it - our_servise */
+ .our_servise {padding: 140px 0 80px;}
 
+.section_subtitle_nopadding {width: 48.97959%; }
+.section_subtitle_nopadding h6 {font-size: 16px;}
+.our_servise_content_container { flex-direction: column;}
+
+.our_servise_content {width: 100%;}
+.our_servise_content_text {column-count: 1;}
+
+.our_servise_infographic {width: 100%; margin-left: 0; margin-bottom: 50px;}
+.our_servise_infographic_img {min-width: auto; max-width: 400px; padding: 0;}
+
+.our_servise_list_container { flex-direction: column;}
+.our_servise_list {width: 66%;}
+.our_servise_list h5 {font-size: 21px; line-height: 28px;}
+.our_servise_list li {padding-bottom: 14px; margin-bottom: 14px;}
+
+/* Made with love - our_culture */
+ .our_culture { padding: 140px 0 60px; }
+
+ .our_culture_container {width: 83.05085%;} 
+ .our_culture_title {margin: 0px 0 100px;}
+ .our_culture_title h2 {font-size: 72px; line-height: 75px;}
+
+ .our_culture_list li {width: 48.97959%; height: auto; }
+ .our_culture_list li:nth-child(4n+1) {margin-left: auto;}
+ .our_culture_list li:nth-child(2n+1) {margin-left: 0;}
+ .our_culture_list h5 { font-size: 21px; line-height: 28px;}
+ 
+/* our_offices */
+ .our_offices {width: 100%; background-color: black; padding: 100px 0; box-sizing: border-box;}
+ .our_offices_container {width: 83.05085%; margin: 0 auto;} 
+
+ .our_offices_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 20px;}
+ .our_offices_list li {width: 48.97%; margin-left: 2%; padding-top: 20px; margin-bottom: 25px; border-top: 1px solid #666;}
+ .our_offices_list li h5 { font-size: 21px; line-height: 28px;}
+ .our_offices_list li:nth-child(4n+1) {margin-left: auto;}
+ .our_offices_list li:nth-child(2n+1) {margin-left: 0;}
+ .our_offices_list p {color: white; opacity: 0.5;}
+ 
+/* our_leadership */
+ .our_leadership {padding: 100px 0; ;}
+ .our_leadership_container {width: 83.0508%;} 
+ 
 }
 
 @media screen and (max-width: 767px) {
+/* about_us */
   .about_us {padding: 60px 0; }
    .section_subtitle h6 { font-size: 14px; }
 
   .about_us_content h3 {font-size:30px; line-height:42px;}
 
+/* How we do it - our_servise */ 
+.our_servise {padding: 60px 0;}
+   .section_subtitle_nopadding h6 {font-size: 14px;}
+   
+   .our_servise_content_title {font-size: 40px;}
+
+   .our_servise_list {width: 100%;}
+   .our_servise_list h5 {font-size: 19px; line-height: 26px; margin-bottom: 20px;}
+   .our_servise_list li {padding-bottom: 7px; margin-bottom: 7px;}
+
+/* Made with love - our_culture */
+.our_culture {padding: 60px 0 20px;}
+ .our_culture_container {width: 74.35897%;} 
+ .our_culture_title {margin: 0px 0 40px;}
+
+   .our_culture_title h2 {font-size: 40px; line-height: 44px; letter-spacing: -1px;}
+   .our_culture_list li {width: 100%; height: auto; margin-left: 0%; margin-bottom: 40px;}
+   .our_culture_list h5 {font-size: 19px; line-height: 26px;}
+
+   .our_culture_background, .sp_box {display: none;}
+
+  
+/* our_offices */
+ .our_offices {padding: 60px 0;}
+ .our_offices_container {width: 74.35897%;} 
+ .our_offices_list li {width: 100%; margin-left: 0%;}
+ .our_offices_list h5 { font-size: 19px; line-height: 26px;}
+
+ /* our_leadership */
+ .our_leadership {padding: 60px 0;}
+ .our_leadership_container {width: 74.35897%;} 
+  .our_leadership_list li {width: 100%; margin-left: 0%; padding: 30px 0 26px;}
+  .our_leadership_list h5 { font-size: 19px; line-height: 26px;}
+  .our_leadership_list li:nth-child(n+2) { border-top: 1px solid rgba(0,0,0,0.3);}
+  .our_leadership_list p {color: rgba(0,0,0,0.3); line-height: 28px; margin-top: 8px;}
 }
 
 

@@ -47,9 +47,9 @@ h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
 h3 {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
 h4 {font-size: 44px; line-height: 44px;}
 
-h5 {font-size: 36px; line-height: 32px;}
+/*h5 {font-size: 36px; line-height: 32px;}
 h6 {font-size: 24px; line-height: 30px;}
-p { font-size: 22px; line-height: 15.9999px; }
+p { font-size: 22px; line-height: 15.9999px; }*/
 
 .h5_big {font-size: 36px; line-height: 32px;}
 h5 {font-size: 24px; line-height: 30px;}
@@ -87,9 +87,16 @@ p {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing
   background: linear-gradient(315deg,  #ea178c, #ffffff, #ea178c, #ffffff, #ffffff);
   background-size: 800% 800%;
   animation: logo_animation 0.8s; 
-  animation-iteration-count: 1;} 
+  animation-iteration-count: 1;
+  transition: all 0.5s;} 
 
-  #logo_open {width: 120px; height: 74px;  color:#ea178c; font-family: HugeGotic-Bold; font-size: 32px; line-height: 32px;  display: flex; justify-content: flex-start; align-items: center; position: fixed; top: 50px; left: calc(50% - 37px); z-index: 200; padding-top: 4px; box-sizing: border-box; display: none;}
+  #logo_h:hover {background: #ea178c; color:white;  cursor: pointer;}
+
+  #logo_open {cursor: pointer; width: 120px; height: 74px;  color:#ea178c; font-family: HugeGotic-Bold; font-size: 32px; line-height: 32px;  display: flex; justify-content: flex-start; align-items: center; position: fixed; top: 50px; left: calc(50% - 37px); z-index: 200; padding-top: 4px; box-sizing: border-box; display: none;}
+
+
+/* Home_border */
+  #border_s {width: 100%; height: 100%; display: block; z-index: 99; position: fixed; top: 0; left: 0;  transition: border-width 0.25s; pointer-events: none;}
 
 
 /* header */
@@ -122,7 +129,7 @@ p {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing
 
  .menu_wrap {width: 1050px; height: 90px; display: flex; justify-content: space-between;}
  .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column; align-items:center;}
- .menu_wrap li a:hover {color: #ea178c;}
+ .menu_wrap li a:hover {color: #ea178c; }
 
  .menu_wrap hr {width: 100%; display: none;}
  .menu_wrap li p {padding: 4px 0; } 
@@ -131,7 +138,7 @@ p {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing
  .gnb_aside {width: 320px; height: 22px; display: flex; justify-content: center; position: absolute; bottom: 76px; left: calc(50vw - 160px);}
  .gnb_aside p {letter-spacing: -1px;}
  .gnb_aside a {margin-left: 6px; padding-top: 3px;}
- .gnb_aside a:hover {color: #ea178c;}
+ .gnb_aside a:hover {color: #ea178c; }
  .gnb_aside a span {color: #ea178c;}
 
 
@@ -145,13 +152,14 @@ p {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing
       .footer_content_left > div {font-family: HugeGotic-Bold; font-size: 28px; line-height: 36px; border-right: 1px solid #888888; padding-right: 28px; margin-right: 28px; letter-spacing: 2px; }
       .footer_content_left > p {font-family: HugeGotic-Bold; font-size: 18px; line-height: 36px; letter-spacing: 1px;}
 
-    .footer_content_right {display: flex; flex-direction: column;}
-      .footer_content_right > div { color: #c8c8c8;  margin-bottom: 10px;}
+    .footer_content_right {display: flex; flex-direction: column; color: #c8c8c8; }
+      .footer_content_right > div { margin-bottom: 10px;}
 
       .footer_content_right a {margin-right: 16px;}
+      .footer_content_right a:hover {color: white;}
       .footer_content_right a:last-child {margin-right: 0;}
 
-      .footer_aside { text-align: right; color: #c8c8c8;}
+      .footer_aside { text-align: right; }
 
 
 /* main last -home 제외 나머지 */
@@ -167,6 +175,7 @@ p {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; letter-spacing
 .hero_video {width: 100%; height: 80vh; display: flex; justify-content: center; align-items: center; position: relative;}
  .hero_video video {min-width: 100vw; min-height: 80vh; border: none; right: 0; bottom: 0; position: absolute; background-size: cover;}
  .hero_video_button {width: 74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; font-size: 24px; text-align: center; line-height: 74px; z-index: 100; position: absolute; top: calc(50% - 37px); left: calc(50% - 37px);}
+ .hero_video_button:hover {cursor: pointer;}
 
 .hero_video {width: 100%; height: 80vh; display:block; overflow: hidden; padding: 140px 0 60px;  position: relative; }
  .hero_video video {min-width: 100%; min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
