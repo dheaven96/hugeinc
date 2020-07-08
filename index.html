@@ -16,15 +16,35 @@
 <!-- 구글 웹 폰트 -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
 
+
   <script>
 /*  변수 선언  */
     var header_state = 0;    /* 헤더 보이기 상태 */
-  
-    function LogoClick()  {
+    var border_state = 0;    /* 보더 보이는 상태 */
+
+    function borderShow()  {
+      if ( border_state == 0) {
+      document.getElementById("border_s").style = "border-top:90px solid #F4F4F4; border-right:50px solid #F4F4F4; border-left:50px solid #F4F4F4; border-bottom:50px solid #F4F4F4;";
+      border_state = 1;}
+    }
+
+    function borderHide()  {
+      if ( border_state == 1 && header_state == 0) {
+      document.getElementById("border_s").style = "border-top:0px solid #F4F4F4; border-right:0px solid #F4F4F4; border-left:0px solid #F4F4F4; border-bottom:0px solid #F4F4F4;";
+      border_state = 0;}
+    }
+
+
+    function logoClick()  {
 
      if (document.body.clientWidth > 767)
       {
        if (header_state == 0)  {
+        //border_state
+        //document.getElementById("border_s").style = "border-top:0px solid //#F4F4F4; border-right:50px solid #F4F4F4; border-left:50px solid //#F4F4F4; border-bottom:0px solid #F4F4F4;";
+        //border_state = 1;
+
+        //logo_state
         document.getElementById("home_header").style ="animation-name: header_ani_open; animation-duration: 0.3s; animation-fill-mode: forwards;";
 
         document.getElementById("main").style ="padding-top:440px;";
@@ -33,6 +53,10 @@
         document.getElementById("logo_open").style ="display: flex;";
 
         header_state = 1; /* 헤더 height: 440px 상태 기억 */
+
+        //border_state
+        document.getElementById("border_s").style = "border-top:90px solid #F4F4F4; border-right:50px solid #F4F4F4; border-left:50px solid #F4F4F4; border-bottom:0px solid #F4F4F4;";
+        
         } 
        else {
         document.getElementById("home_header").style ="animation-name: header_ani_close; animation-duration: 0.3s; animation-fill-mode: forwards;";
@@ -43,6 +67,10 @@
         document.getElementById("logo_open").style ="display: none;";
 
         header_state = 0; /* 헤더 height: 0px 상태 기억 */
+
+        //border_state
+        document.getElementById("border_s").style = "border-top:90px solid #F4F4F4; border-right:50px solid #F4F4F4; border-left:50px solid #F4F4F4; border-bottom:50px solid #F4F4F4;";
+             
         } 
       } 
 
@@ -71,9 +99,8 @@
         } 
       } 
 
-
-
     }
+ 
 
   </script> 
 </head>
@@ -86,9 +113,32 @@
 </div>  -->
 
 <!-- Home_logo 시작 -->
-<div id="logo_h" onclick="LogoClick()">H</div>
-<div id="logo_open" onclick="LogoClick()">HUGE</div>
+<div id="logo_h" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">H</div>
+<div id="logo_open" onclick="logoClick()">HUGE</div>
 
+<script>      
+  var preYScroll = window.pageYOffset;
+
+  window.onscroll = function() {
+     var presentYScroll = window.pageYOffset;
+
+     if (presentYScroll > preYScroll) {
+         document.getElementById("logo_h").style="top:-124px; opacity:0.5;";        
+      }         
+     else {
+        if (document.body.clientWidth >767) {
+         document.getElementById("logo_h").style="top:50px; opacity: 1;";
+        }
+          else {
+           document.getElementById("logo_h").style="top:25px; opacity: 1;";
+          }
+      }
+      preYScroll = presentYScroll;
+  };
+</script> 
+
+<!-- Home_border 시작 -->
+<a id="border_s"></a>
 
 <!-- header 시작 -->
 <header id="home_header">

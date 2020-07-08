@@ -93,21 +93,6 @@
      <h1 class="hero_title color_wh" id="greeting">Hello.</h1>
  </section>
 
- <script>
-  /* h1 greeting code */  
-    var greetingGlobal = ["Hello.","Hola.","Buenas.","Ola.","Ei.","你好.","E'yo.","Ello.","Aye."]
-    var greetingIndex = 0;
-    setInterval ( outputGreeting, 1000 );
-  
-    function outputGreeting() {
-      document.getElementById("greeting").innerHTML = greetingGlobal[greetingIndex];
-      greetingIndex = greetingIndex + 1;
-  
-     if (greetingIndex > 8) {
-       greetingIndex = 0;}
-    }       
-  </script>
-
 <!-- contact_hello 시작 -->
  <section class="contact_hello">
 
@@ -129,17 +114,17 @@
         </li>
         <li>
           <p>Media Inquiries.</p>
-          <p>+1 718 880 3724</p>
+          <p>+1 718 618 4724</p>
           <p><a>press@hugeinc.com</a></p>
         </li>
         <li>
           <p>Join Huge.</p>
-          <p>+1 718 625 4843</p>
+          <p>+1 718 618 4724</p>
           <p><a>work@hugeinc.com</a></p>
         </li>
         <li>
           <p>Everything Else.</p>
-          <p>+1 718 625 4843</p>
+          <p>+1 718 618 4724</p>
           <p><a>hello@hugeinc.com</a></p>
         </li>
 
@@ -155,109 +140,113 @@
 
   <ul class="office_card_container">
 
-    <li><a class="office_card_color">
+    <li><a id="card_bg">
       <h4>Atlanta.</h4>
       <h5>Ayee.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
+      <p>
+        <span id="atlanta_hour"></span>
+        <span id="atlanta_min"></span>
+        <span id="atlanta_ampm"></span>
+      </p>
       <p>+1 404 461 9025</p>
       <p>atl@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <img id="sun_moon" src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Bogotá.</h4>
       <h5>Hola.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
+      <p id="bogota"></p>
       <p>+571 3810606</p>
       <p>bog@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <img id="sun_moon" src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Brooklyn.</h4>
       <h5>Yo.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
+      <p id="brooklyn"></p>
       <p>+1 718 625 4823</p>
       <p>bk@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <img id="sun_moon" src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Chicago.</h4>
       <h5>Hey.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+1 718 618 3150</p>
-      <p>chi@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>DC.</h4>
       <h5>Hi.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+1 718 618 4600</p>
-      <p>dc@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Detroit.</h4>
       <h5>Whad'up.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+1 718 618 0600</p>
-      <p>det@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>London.</h4>
       <h5>'Ello.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+44 (0)203 356</p>
-      <p>ldn@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Los Angeles.</h4>
       <h5>E'yo.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+1 310 499 7700</p>
-      <p>la@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Medellin.</h4>
       <h5>Buenas.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+57 4 604 5535</p>
-      <p>mde@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Oakland.</h4>
       <h5>Sup.</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+1 510 735 0700</p>
-      <p>oak@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Singapore.</h4>
       <h5>你好</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+65 6303 0592</p>
-      <p>sgp@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Toronto.</h4>
       <h5>Eh?</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+1 416 800 0466</p>
-      <p>to@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
+      <p>atl@hugeinc.com</p>
+      <img src="img/contact/sun-01.svg">
     </a></li>
-    <li><a class="office_card_color">
+    <li><a>
       <h4>Tokyo.</h4>
       <h5>こんにちは</h5>
-      <p><span class="hour"></span>:<span class="min"></span> <span class="ampm"></span></p>
-      <p>+81 3 4577 7930</p>
+      <p>6:44 PM</p>
+      <p>+1 718 618 4724</p>
       <p>tyo@hugeinc.com</p>
-      <img class="icon" src="img/contact/sun-01.svg">
+      <img src="img/contact/sun-01.svg">
     </a></li>
     
   </ul>
@@ -268,7 +257,7 @@
 <section class="main_last">
   <div class="bg_color_warp">
    <div class="main_last_wrap">
-    <a class="main_last_left" href="https://magenta.as"></a>
+     <a class="main_last_left"></a>
      <a class="main_last_right">
        <h2 class="color_wh">Balancing Careers in Art and Design.</h2>
        <p class="p1_serif color_wh">Alison Kudlow is a UX designer by day, a sculptor by night. Here’s how she makes it work.</p>
@@ -312,48 +301,91 @@
 
 
 
+<script>
+/* h1 greeting code */  
+  var greetingGlobal = ["Hello.","Hola.","Buenas.","Ola.","Ei.","你好.","E'yo.","Ello.","Aye."]
+  var greetingIndex = 0;
+  setInterval ( outputGreeting, 1000 );
 
+  function outputGreeting() {
+    document.getElementById("greeting").innerHTML = greetingGlobal[greetingIndex];
+    greetingIndex = greetingIndex + 1;
 
-<script>    /* office_card code (class & 배열 사용법)*/
-  var dateYourCity = new Date();  //브라우저 시간: 당신이 위치한 곳의 시간
-  var utcHour = dateYourCity.getUTCHours(); //UTC Hour 계산
-  var utcMin = dateYourCity.getUTCMinutes(); //UTC Minute 계산
-  var cityTimeOffset = [-4, -5, -4, -5, -4, -4, 1, -7, -5, -7, 8, -4, 9]
+   if (greetingIndex > 8) {
+     greetingIndex = 0;}
+  }       
+    
+/* office_card code  
+var presentHour = new Date().getHours();
+var presentMin = new Date().getMinutes();
+var amPm = "AM";
+
+if (presentHour < 12){
+  document.getElementById("present_time").
+  innerHTML = presentHour + ":" + presentMin + " " + amPm ;
+}   
+else {
+  amPm = "PM";
+  if (presentHour != 12) {  //12가 아닐때
+  presentHour = presentHour - 12;}
+  document.getElementById("present_time").
+  innerHTML = presentHour + ":" + presentMin + " " + amPm ;
+
+  document.getElementById("card_bg").
+  style = "background-color: #161616; color:white;" ;
   
+  document.getElementById("sun_moon").
+  src = "img/contact/moon-01.svg" ;
+}   */
 
-for (i=0; i < 13; i++)  {
-  document.getElementsByClassName("hour")[i].innerHTML = timeExchange12(timeExchange(cityTimeOffset[i]));
-  document.getElementsByClassName("min")[i].innerHTML = min2digit(utcMin);
-  document.getElementsByClassName("ampm")[i].innerHTML = amPm(timeExchange(cityTimeOffset[i]));
 
-  if (timeExchange(cityTimeOffset[i]) < 6 || timeExchange(cityTimeOffset[i]) > 18) {
-   document.getElementsByClassName("office_card_color")[i].style="background-color: #161616; color: white;";
-   document.getElementsByClassName("icon")[i].src = "img/contact/moon-01.svg";
-  }
-}
 
-  function timeExchange(a) {   //시간이 24보다 클 때는 0부터 시작 -24를 빼준다, 0보다 작을 때 24 더해준다.
-     var exchHour = utcHour + a;    
+/* office_card code (id 사용법)*/ 
+  var dateYourCity = new Date();  //브라우저 시간: 당신이 위치한 곳의 시간
+  var utcHour = dateYourCity.getUTCHours(); //UTC시간
+  var utcMin = dateYourCity.getUTCMinutes(); //UTC 분 시간
+
+  var atlantaHour = timeExchange(-4);
+  var atlantaHourAmPm = amPm(atlantaHour);
+  var atlantaHour12 = timeExchange12(atlantaHour);
+  var atlantaMin2digit = utcMin;
+  //var atlanta_icon = iconOpen(atlantaHour);
+
+
+  document.getElementById("atlanta_hour").innerHTML = atlantaHour12 + ":";
+  document.getElementById("atlanta_min").innerHTML = atlantaMin2digit;
+  document.getElementById("atlanta_ampm").innerHTML = atlantaHourAmPm;
+
+
+ if (atlantaHour <6 || atlantaHour >18) {
+  document.getElementById("atlanta_card").style = "background-color: #161616; color:white;";
+  document.getElementById("atlanta_icon").src = "img/contact/moon-01.svg";
+ }
+
+  function timeExchange(a) {
+     var exchHour = utcHour + a;    //시간이 24보다 클 때는 0부터 시작 -24를 빼준다, 0보다 작을 때 24 더해준다.
      if (exchHour > 24) { exchHour -= 24;} 
      else if (exchHour < 0) { exchHour += 24;}
      return exchHour;
   }
 
-  function timeExchange12(a) {  //12시간 보정
-     if (a > 12) { a -= 12;} 
-     return a;
-  }
-
-  function min2digit(a) {  //분 + 0
-     if (a < 10) { a = "0" + a;} 
-     return a;
-  }
-
-   function amPm(a) {    //오전오후 판단
-     if (a >= 12) { b = "PM";} 
+  function amPm(a) {
+     if (a >= 12) { b = "PM"; } 
      else { b = "AM";} 
      return b;
   }
+
+  function timeExchange12(a) {
+     if (a > 12) { a -= 12; } 
+     return a;
+  }
+
+  // if (utcMin < 10) {atlantaMin2digit = "0" + utcMin;}
+  function min2digit(a) {
+     if (a < 10) { a = "0" + a;} 
+     return a;
+   }
+
 </script>
 
 </body> 
